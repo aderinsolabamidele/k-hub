@@ -3,8 +3,7 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/k-hub/",   // 🔥 REQUIRED for GitHub Pages
-  logLevel: "error",
+  base: "/k-hub/",
   plugins: [
     base44({
       legacySDKImports: process.env.BASE44_LEGACY_SDK_IMPORTS === "true",
