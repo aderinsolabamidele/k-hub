@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { base44 } from "../api/Base44Client";
+import { base44 } from "../api/base44Client";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, Star, Sparkles, Shield, TrendingUp, Home, Zap } from "lucide-react";
 import PropertyCard from "../components/PropertyCard";
