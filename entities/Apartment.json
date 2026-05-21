@@ -1,0 +1,112 @@
+{
+  "name": "Apartment",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location",
+      "enum": [
+        "Lagos",
+        "Abuja",
+        "Port Harcourt",
+        "Ibadan",
+        "Kano",
+        "Enugu",
+        "Calabar",
+        "Benin City",
+        "Lekki",
+        "Victoria Island"
+      ]
+    },
+    "address": {
+      "type": "string",
+      "title": "Address"
+    },
+    "price_per_night": {
+      "type": "number",
+      "title": "Price Per Night (\u20a6)"
+    },
+    "bedrooms": {
+      "type": "number",
+      "title": "Bedrooms"
+    },
+    "bathrooms": {
+      "type": "number",
+      "title": "Bathrooms"
+    },
+    "max_guests": {
+      "type": "number",
+      "title": "Max Guests"
+    },
+    "amenities": {
+      "type": "array",
+      "title": "Amenities",
+      "items": {
+        "type": "string",
+        "enum": [
+          "WiFi",
+          "AC",
+          "Pool",
+          "Gym",
+          "Parking",
+          "Generator",
+          "Security",
+          "Kitchen",
+          "Washer",
+          "TV",
+          "Balcony",
+          "Sea View"
+        ]
+      }
+    },
+    "images": {
+      "type": "array",
+      "title": "Images",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "active",
+        "inactive",
+        "booked"
+      ],
+      "default": "active"
+    },
+    "rating": {
+      "type": "number",
+      "title": "Rating",
+      "default": 0
+    },
+    "review_count": {
+      "type": "number",
+      "title": "Review Count",
+      "default": 0
+    },
+    "featured": {
+      "type": "boolean",
+      "title": "Featured",
+      "default": false
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "location",
+    "price_per_night",
+    "bedrooms",
+    "bathrooms"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Message",
+  "type": "object",
+  "properties": {
+    "sender_name": {
+      "type": "string",
+      "title": "Sender Name"
+    },
+    "sender_email": {
+      "type": "string",
+      "title": "Sender Email"
+    },
+    "subject": {
+      "type": "string",
+      "title": "Subject"
+    },
+    "body": {
+      "type": "string",
+      "title": "Message"
+    },
+    "apartment_id": {
+      "type": "string",
+      "title": "Related Apartment ID"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "unread",
+        "read",
+        "replied"
+      ],
+      "default": "unread"
+    },
+    "admin_reply": {
+      "type": "string",
+      "title": "Admin Reply"
+    }
+  },
+  "required": [
+    "sender_name",
+    "sender_email",
+    "subject",
+    "body"
+  ]
+}

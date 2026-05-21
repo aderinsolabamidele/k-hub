@@ -1,0 +1,28 @@
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "apartment_id": {
+      "type": "string",
+      "title": "Apartment ID"
+    },
+    "reviewer_name": {
+      "type": "string",
+      "title": "Reviewer Name"
+    },
+    "rating": {
+      "type": "number",
+      "title": "Rating"
+    },
+    "comment": {
+      "type": "string",
+      "title": "Comment"
+    }
+  },
+  "required": [
+    "apartment_id",
+    "reviewer_name",
+    "rating",
+    "comment"
+  ]
+}

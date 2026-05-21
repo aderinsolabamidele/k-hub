@@ -1,0 +1,67 @@
+{
+  "name": "Booking",
+  "type": "object",
+  "properties": {
+    "apartment_id": {
+      "type": "string",
+      "title": "Apartment ID"
+    },
+    "apartment_title": {
+      "type": "string",
+      "title": "Apartment Title"
+    },
+    "guest_name": {
+      "type": "string",
+      "title": "Guest Name"
+    },
+    "guest_email": {
+      "type": "string",
+      "title": "Guest Email"
+    },
+    "guest_phone": {
+      "type": "string",
+      "title": "Guest Phone"
+    },
+    "check_in": {
+      "type": "string",
+      "format": "date",
+      "title": "Check In"
+    },
+    "check_out": {
+      "type": "string",
+      "format": "date",
+      "title": "Check Out"
+    },
+    "guests": {
+      "type": "number",
+      "title": "Number of Guests"
+    },
+    "total_price": {
+      "type": "number",
+      "title": "Total Price (\u20a6)"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "pending",
+        "confirmed",
+        "cancelled",
+        "completed"
+      ],
+      "default": "pending"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "apartment_id",
+    "guest_name",
+    "guest_email",
+    "check_in",
+    "check_out",
+    "total_price"
+  ]
+}
