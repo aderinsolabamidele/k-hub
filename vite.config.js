@@ -1,19 +1,18 @@
 import base44 from "@base44/vite-plugin";
-import react from '@vitejs/plugin-react';
-import { defineConfig } from 'vite';
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: "/k-hub/",
+  base: "/k-hub/",   // 🔥 REQUIRED for GitHub Pages
   logLevel: "error",
   plugins: [
     base44({
-      legacySDKImports: process.env.BASE44_LEGACY_SDK_IMPORTS === 'true',
+      legacySDKImports: process.env.BASE44_LEGACY_SDK_IMPORTS === "true",
       hmrNotifier: true,
       navigationNotifier: true,
       analyticsTracker: true,
-      visualEditAgent: true
+      visualEditAgent: true,
     }),
     react(),
-  ]
+  ],
 });
